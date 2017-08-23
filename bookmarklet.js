@@ -1,7 +1,7 @@
 
 var version = [0, 0, 6];
 
-var uglify = require('uglify-js');
+var uglify = require('uglify-es');
 
 // metadata
 var str = 1,
@@ -48,7 +48,7 @@ function loadScript(code, path) {
 }
 
 function minify(code) {
-    return uglify.minify(code, {fromString: true}).code;
+    return uglify.minify(code).code;
 }
 
 function convert(code, options) {
