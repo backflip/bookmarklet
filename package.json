@@ -7,7 +7,7 @@
     "bookmarklet": "./bin/bookmarklet"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./bin/bookmarklet ./test/test.bookmarklet.js"
   },
   "repository": "https://github.com/mrcoles/bookmarklet",
   "keywords": [
